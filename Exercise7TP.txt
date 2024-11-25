@@ -1,0 +1,40 @@
+class LPoint extends Point {
+    private char l;
+
+    LPoint() {}
+
+    LPoint(int v, char li) {
+        super(v);
+        l = li;
+    }
+
+    LPoint(int xi, int yi, char li) {
+        super(xi, yi);
+        l = li;
+    }
+
+    void setL(int xi, int yi, char li) {
+        set(xi, yi);
+        l = li;
+    }
+
+    char getL() {
+        return l;
+    }
+
+    void printL() {
+        System.out.println(getX() + ";" + getY() + ":" + l);
+    }
+}
+
+
+public class TestLPoint {
+    public static void main(String[] args) {
+        LPoint pt = new LPoint();
+        pt.printL();
+        pt.setL(5, 2, 'b');
+        pt.printL();
+        pt.move(-6, 4);
+        pt.printL();
+    }
+}

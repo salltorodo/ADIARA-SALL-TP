@@ -1,0 +1,9 @@
+public class TestComparaison {
+    public static void main(String[] args) {
+        Point pt1 = new Point();
+        Point pt2 = new Point();
+        System.out.println(pt1 == pt2); // false
+        System.out.println(pt1 != pt2); // true
+        System.out.println(pt1 == pt1); // true
+    }
+}

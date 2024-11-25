@@ -1,0 +1,43 @@
+class Point {
+    private int x, y;
+
+    private void check() {
+        if (x < 0) x = 0;
+        if (y < 0) y = 0;
+    }
+
+    Point() {}
+
+    void move(int dx, int dy) {
+        x += dx;
+        y += dy;
+        check();
+    }
+
+    void set(int xi, int yi) {
+        x = xi;
+        y = yi;
+        check();
+    }
+
+    int getX() {
+        return x;
+    }
+
+    int getY() {
+        return y;
+    }
+
+    void print() {
+        System.out.println(x + ";" + y);
+    }
+}
+
+public class TestPoint {
+    public static void main(String[] args) {
+        Point pt = new Point();
+        pt.print();
+        System.out.println(new Point());
+        new Point().print();
+    }
+}

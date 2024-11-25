@@ -1,0 +1,13 @@
+void ex(Point pt) {
+    pt.set(1, 1);
+}
+
+void test() {
+    Point pt1, pt2;
+    pt1 = new Point();
+    pt2 = pt1;
+    pt1.set(2, 3);
+    pt2.print();
+    ex(pt2);
+    pt1.print();
+}
